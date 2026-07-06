@@ -8,7 +8,7 @@ def add_todo():
     todo = st.session_state['new_todo'].strip()
 
     if todo:
-        todos.append(todo)
+        todos.append(todo + "\n")
         functions.write_todos(todos)
 
     st.session_state["new_todo"] = ""
